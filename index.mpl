@@ -1,0 +1,9 @@
+print = "hey"
+print ? length = "hey"
+print ? caps = "hey"
+print ? lower = "hEy"
+math ? + = 3 2
+math ? - = 3 2
+math ? * = 3 2
+math ? / = 3 2
+math ? % = 3 2
