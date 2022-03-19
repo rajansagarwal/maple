@@ -15,58 +15,65 @@ native function print
   (ARGS) => {
     console.log(ARGS.txt);
   }
-constructor print ({print = $1.},{[["1","txt"]]},{["txt"]})
+constructor print ({print --> $1.},{[["1","txt"]]},{["txt"]})
 
 native function caps
   (ARGS) => {
     console.log((ARGS.txt).toUpperCase());
   }
-constructor caps ({print ? caps = $1.},{[["1","txt"]]},{["txt"]})
+constructor caps ({print ? caps --> $1.},{[["1","txt"]]},{["txt"]})
 
 native function lower
   (ARGS) => {
     console.log((ARGS.txt).toLowerCase());
   }
-constructor lower ({print ? lower = $1.},{[["1","txt"]]},{["txt"]})
+constructor lower ({print ? lower --> $1.},{[["1","txt"]]},{["txt"]})
 
 native function length
   (ARGS) => {
     console.log((ARGS.txt).length);
   }
-constructor length ({print ? length = $1.},{[["1","txt"]]},{["txt"]})
+constructor length ({print ? length --> $1.},{[["1","txt"]]},{["txt"]})
 
 native function trim
   (ARGS) => {
     console.log((ARGS.txt).trim());
   }
-constructor trim ({print ? trim = $1.},{[["1","txt"]]},{["txt"]})
+constructor trim ({print ? trim --> $1.},{[["1","txt"]]},{["txt"]})
 
 native function sum
   (ARGS) => {
     console.log((ARGS.txt).split(' ')[0] += (ARGS.txt).split(' ')[1]);
   }
-constructor sum ({math ? + = $1.},{[["1","txt"]]},{[]})
+constructor sum ({math ? + --> $1.},{[["1","txt"]]},{[]})
 
 native function subtract
   (ARGS) => {
     console.log((ARGS.txt).split(' ')[0] - (ARGS.txt).split(' ')[1]);
   }
-constructor subtract ({math ? - = $1.},{[["1","txt"]]},{[]})
+constructor subtract ({math ? - --> $1.},{[["1","txt"]]},{[]})
 
 native function multiply
   (ARGS) => {
     console.log((ARGS.txt).split(' ')[0] * (ARGS.txt).split(' ')[1]);
   }
-constructor multiply ({math ? * = $1.},{[["1","txt"]]},{[]})
+constructor multiply ({math ? * --> $1.},{[["1","txt"]]},{[]})
 
 native function divide
   (ARGS) => {
     console.log((ARGS.txt).split(' ')[0] / (ARGS.txt).split(' ')[1]);
   }
-constructor divide ({math ? / = $1.},{[["1","txt"]]},{[]})
+constructor divide ({math ? / --> $1.},{[["1","txt"]]},{[]})
 
 native function remainder
   (ARGS) => {
     console.log((ARGS.txt).split(' ')[0] % (ARGS.txt).split(' ')[1]);
   }
-constructor remainder ({math ? % = $1.},{[["1","txt"]]},{[]})
+constructor remainder ({math ? % --> $1.},{[["1","txt"]]},{[]})
+
+constructor string ({'$1'},{[["1","txt"]]},{[]})
+native function array
+  (ARGS) => {
+    console.log(Array.from(ARGS.txt));
+  }
+constructor array ({array --> $1.},{[["1","txt"]]},{[]})
