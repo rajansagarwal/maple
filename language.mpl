@@ -77,3 +77,10 @@ native function array
     console.log(Array.from(ARGS.txt));
   }
 constructor array ({array --> $1.},{[["1","txt"]]},{[]})
+
+native function variables
+  (ARGS) => {
+    const x = (ARGS.txt)
+    console.log(x);
+  }
+constructor lower ({var ? var --> $1.},{[["1","txt"]]},{["txt"]})
