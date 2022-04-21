@@ -82,5 +82,6 @@ native function variables
   (ARGS) => {
     const x = (ARGS.txt)
     console.log(x);
+    export const xx = (ARGS.txt)
   }
 constructor lower ({var ? var --> $1.},{[["1","txt"]]},{["txt"]})
