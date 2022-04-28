@@ -286,10 +286,8 @@ for(let line of _l) {
   readFunction(line);
 }
 
-
 constructors.shift();
 constructors.shift();
-
 
 program = fs.readFileSync('index.mpl').toString();
 _l = compileLines(program,syntax);
