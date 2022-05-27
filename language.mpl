@@ -76,7 +76,7 @@ native function array
   (ARGS) => {
     console.log(Array.from(ARGS.txt));
   }
-constructor array ({array --> $1.},{[["1","txt"]]},{[]})
+constructor array ({var --> $1.},{[["1","txt"]]},{[]})
 
 native function variables
   (ARGS) => {
