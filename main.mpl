@@ -1,0 +1,2 @@
+array --> test
+print --> array
