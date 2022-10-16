@@ -47,12 +47,13 @@ newConstructor("constructor", {
   ],
   quoteSets: ['"', "'", "`"],
   whitespace: [" ", "  "],
-  c: "constructor $1 ({$2},{$3},{$4})",
+  c: "constructor $1 ({$2},{$3},{$4},{$5})",
   map: [
     ["1", "name"],
     ["2", "constructor"],
     ["3", "map"],
     ["4", "evalParams"],
+    ["5", "list"],
   ],
   evalParams: [],
 });
@@ -128,7 +129,7 @@ function splitFromConstructor(txt, c) {
           }
           if (i > txt.length + 1) {
             throw Error(
-              "Past propper range; check that quotes and parentheses match."
+              "Past proper range; check that quotes and parentheses match."
             );
           }
           i++;
